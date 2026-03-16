@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rohan Portfolio</title>
+<link rel="icon" type="image/png" href="LinkedIn (Male)-1751356405000.jpg">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-logo">R</div>
+</div>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+<div class="logo">R</div>
+
+<div class="nav-item active" onclick="showPage('home', this)">
+<i class="fa-solid fa-house"></i>
+<span class="tooltip">Home</span>
+</div>
+
+<div class="nav-item" onclick="showPage('about', this)">
+<i class="fa-solid fa-user"></i>
+<span class="tooltip">About</span>
+</div>
+
+<div class="nav-item">
+<i class="fa-solid fa-gear"></i>
+</div>
+
+<div class="nav-item" onclick="showPage('experience', this)">
+<i class="fa-solid fa-address-book"></i>
+<span class="tooltip">Experience</span>
+</div>
+
+<div class="nav-item" onclick="showPage('projects', this)">
+<i class="fa-solid fa-folder-open"></i>
+<span class="tooltip">Projects</span>
+</div>
+
+<div class="nav-item" onclick="showPage('testimonial', this)">
+<i class="fa-solid fa-thumbs-up"></i>
+<span class="tooltip">Testmonial</span>
+</div>
+
+<div class="nav-item" onclick="showPage('blog', this)">
+<i class="fa-solid fa-newspaper"></i>
+<span class="tooltip">Blog</span>
+</div>
+
+<div class="nav-item" onclick="showPage('contact', this)">
+<i class="fa-solid fa-comments"></i>
+<span class="tooltip">Contact</span>
+</div>
+</div>
+
+<div class="language-dropdown">
+<i class="fa-solid fa-globe"></i>
+<select>
+<option>English</option>
+<option>Spanish</option>
+<option>French</option>
+</select>
+</div>
+
+<!-- HERO SECTION -->
+<section id="home" class="page active">
+<div class="hero">
+<div class="hero-text">
+<h3 class="hello">Hi I'm,</h3>
+<h1>
+Rohan <br>
+<span>Potla</span>
+</h1>
+<p>I am <span id="typing"></span></p>
+</div>
+
+<div class="hero-image">
+<img src="profile.png">
+</div>
+</section>
+
+<!-- ABOUT PAGE -->
+<section id="about" class="page">
+<div class="about-wrapper">
+<div class="about-left">
+<p class="about-title">• About Me —</p>
+<h2 class="about-heading">
+I'm <span>Rohan Potla</span>
+</h2>
+<p class="about-text">
+Aspiring Computer Science Engineering student at Anurag University, Hyderabad, with strong
+technical skills and problem-solving abilities. Eager to apply academic knowledge to real-world
+projects and grow in the field of computer science.
+</p>
+
+<div class="about-stats">
+<div class="stat">
+<h3>0</h3>
+<p>Years of Experience</p>
+</div>
+
+<div class="stat">
+<h3>0</h3>
+<p>Satisfied Customers</p>
+</div>
+
+<div class="stat">
+<h3>4+</h3>
+<p>Projects Completed</p>
+</div>
+</div>
+<a href="rohan resume.pdf" download class="download-btn">
+DOWNLOAD CV
+</a>
+</div>
+
+<div class="about-right">
+<img src="about.png">
+</div>
+</div>
+</section>
+
+<!-- experience -->
+<section id="experience" class="page">
+<div class="experience-wrapper">
+<p class="exp-label">• Experience —</p>
+<h2 class="exp-title">
+Job And Educational Experiences
+</h2>
+
+<div class="experience-grid">
+<!-- Education -->
+<div class="exp-column">
+<h3 class="exp-heading">
+<i class="fa-solid fa-graduation-cap"></i> Education
+</h3>
+
+<div class="exp-card">
+<h4>Bachelor of Technology</h4>
+<p class="exp-date">
+Oct 2021 - Apr 2017
+</p>
+<p>
+There are many variations of passages of Lorem Ipsum available.
+</p>
+</div>
+
+<div class="exp-card">
+<h4>State Board of Intermediate Education </h4>
+<p class="exp-date">
+Jun 2019 - Mar 2021
+</p>
+<p>
+Lorem Ipsum is simply dummy text of the printing industry.
+</p>
+</div>
+</div>
+
+<!-- Job -->
+<div class="exp-column">
+<h3 class="exp-heading">
+<i class="fa-solid fa-briefcase"></i> Job
+</h3>
+
+<div class="exp-card">
+<h4>Fusion5 Technologies</h4>
+<p class="exp-date">
+Mar 2022 - Present
+</p>
+<p>
+Contrary to popular belief, Lorem Ipsum is not simply random text.
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- projects -->
+<section id="projects" class="page">
+<div class="projects-wrapper">
+<p class="project-label">• Projects —</p>
+<h2 class="project-title">Awesome Projects</h2>
+
+<div class="project-filters">
+<button>All</button>
+<button>Web Development</button>
+<button>Graphic Design</button>
+<button>MISC</button>
+</div>
+
+<div class="projects-grid">
+
+<div class="project-card">
+<img src="project1.jpg">
+</div>
+
+<div class="project-card">
+<img src="project2.jpg">
+</div>
+
+<div class="project-card">
+<img src="project3.jpg">
+</div>
+
+<div class="project-card">
+<img src="project1.jpg">
+</div>
+</div>
+</div>
+</section>
+
+<!-- testmonial -->
+<section id="testimonial" class="page">
+<div class="testimonial-wrapper">
+<p class="test-label">• Testimonial —</p>
+<h2 class="test-title">Client's Feedbacks</h2>
+<div class="testimonial-grid">
+<div class="testimonial-card">
+<div class="test-top">
+<img src="image1.avif">
+<p>
+Contrary to popular belief, Lorem Ipsum is not simply random text.
+</p>
+</div>
+
+<div class="test-bottom">
+<h4>Helen Martinez</h4>
+<span>Food Business</span>
+</div>
+</div>
+<div class="testimonial-card">
+<div class="test-top">
+<img src="image2.avif">
+<p>
+There are many variations of passages of Lorem Ipsum available.
+</p>
+</div>
+
+<div class="test-bottom">
+<h4>Mateo Lorenzo</h4>
+<span>Manager, Bank</span>
+</div>
+</div>
+<div class="testimonial-card">
+<div class="test-top">
+<img src="image3.avif">
+<p>
+It is a long established fact that a reader will be distracted.
+</p>
+</div>
+
+<div class="test-bottom">
+<h4>Federico Chiesa</h4>
+<span>Football Coach</span>
+</div>
+</div>
+<div class="testimonial-card">
+<div class="test-top">
+<img src="image4.avif">
+<p>
+When an unknown printer took a galley of type and scrambled it.
+</p>
+</div>
+<div class="test-bottom">
+<h4>Seargio Romero</h4>
+<span>Lawyer</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- blog -->
+ <section id="blog" class="page">
+<div class="blog-wrapper">
+<p class="blog-label">• Blog Post —</p>
+<h2 class="blog-title">Read Latest Updates</h2>
+
+<div class="blog-grid">
+<div class="blog-card">
+<img src="blog1.jpg">
+<div class="blog-content">
+<div class="blog-date">26<br>Jul</div>
+<p class="blog-author">by Bernardi</p>
+<p>Lorem Ipsum is simply dummy text of the printing.</p>
+</div>
+</div>
+
+<div class="blog-card">
+<img src="blog2.jpg">
+<div class="blog-content">
+<div class="blog-date">26<br>Jul</div>
+<p class="blog-author">by Bernardi</p>
+<p>It is a long established fact that a reader will.</p>
+</div>
+</div>
+
+<div class="blog-card">
+<img src="blog3.jpg">
+<div class="blog-content">
+<div class="blog-date">26<br>Jul</div>
+<p class="blog-author">by Bernardi</p>
+<p>Contrary to popular belief, Lorem Ipsum is not.</p>
+</div>
+</div>
+
+<div class="blog-card">
+<img src="blog3.jpg">
+<div class="blog-content">
+<div class="blog-date">26<br>Jul</div>
+<p class="blog-author">by Bernardi</p>
+<p>There are many variations of passages of Lorem.</p>
+</div>
+</div>
+
+<div class="blog-card">
+<img src="blog2.jpg">
+<div class="blog-content">
+<div class="blog-date">26<br>Jul</div>
+<p class="blog-author">by Bernardi</p>
+<p>Many desktop publishing packages and web page.</p>
+</div>
+</div>
+
+<div class="blog-card">
+<img src="blog1.jpg">
+<div class="blog-content">
+<div class="blog-date">26<br>Jul</div>
+<p class="blog-author">by Bernardi</p>
+<p>Richard McClintock, a Latin professor.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- contact me -->
+<section id="contact" class="page">
+<div class="contact-wrapper">
+<p class="contact-label">• Contact Me —</p>
+<h2 class="contact-title">Get In Tuch With Me</h2>
+<form class="contact-form">
+<div class="contact-row">
+<input type="text" placeholder="Enter Name">
+<input type="email" placeholder="Enter Email Address">
+<input type="text" placeholder="Enter Subject">
+</div>
+<textarea placeholder="Enter Message"></textarea>
+<button type="submit" class="send-btn">
+SEND MESSAGE
+</button>
+</form>
+</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
