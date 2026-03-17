@@ -1,7 +1,28 @@
-body{
+/* body{
 margin:0;
 font-family:Arial;
-background:#ffffff;
+background:#f3f2f7;
+background-image:
+radial-gradient(circle at 75% 35%, rgba(0,0,0,0.05) 0%, transparent 45%),
+radial-gradient(circle at 65% 65%, rgba(0,0,0,0.04) 0%, transparent 55%);
+} */
+
+body{
+margin:0;
+background:#f3f2f7;
+position:relative;
+}
+
+body::before{
+content:"";
+position:fixed;
+content: '';
+width: 996px;
+height: 996px;
+border: 76px solid rgba(0, 0, 0, 0.03);
+border-radius: 50%;
+z-index:-1;
+pointer-events:none;
 }
 
 .language-dropdown{
@@ -118,6 +139,7 @@ color:white;
 
 /* PAGE SYSTEM */
 .page{
+background: transparent;
 display:none;
 margin-left:90px;
 min-height:100vh;
