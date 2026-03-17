@@ -30,8 +30,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <span class="tooltip">About</span>
 </div>
 
-<div class="nav-item">
+<div class="nav-item" onclick="showPage('services', this)">
 <i class="fa-solid fa-gear"></i>
+<span class="tooltip">Services</span>
 </div>
 
 <div class="nav-item" onclick="showPage('experience', this)">
@@ -123,6 +124,43 @@ DOWNLOAD CV
 
 <div class="about-right">
 <img src="about.png">
+</div>
+</div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="page">
+<div class="services-wrapper">
+<p class="section-label">• Services —</p>
+<h2 class="section-title">What I'm Doing</h2>
+<div class="services-grid">
+
+<!-- CARD 1 -->
+<div class="service-card">
+  <img src="service1.jpeg" alt="">
+  <div class="service-overlay">
+    <h3>Ecommerce Website</h3>
+    <p>Read More</p>
+  </div>
+</div>
+
+<!-- CARD 2 -->
+<div class="service-card">
+  <img src="service2.jpeg" alt="">
+  <div class="service-overlay">
+    <h3>Logo Design</h3>
+    <p>Read More</p>
+  </div>
+</div>
+
+<!-- CARD 3 (ACTIVE) -->
+<div class="service-card active">
+  <img src="service3.jpeg" alt="">
+  <div class="service-overlay">
+    <h3>HTML Templates</h3>
+    <p>Read More</p>
+  </div>
+</div>
 </div>
 </div>
 </section>
@@ -346,7 +384,7 @@ When an unknown printer took a galley of type and scrambled it.
 <section id="contact" class="page">
 <div class="contact-wrapper">
 <p class="contact-label">• Contact Me —</p>
-<h2 class="contact-title">Get In Tuch With Me</h2>
+<h2 class="contact-title">Get In Touch With Me</h2>
 <form class="contact-form">
 <div class="contact-row">
 <input type="text" placeholder="Enter Name">
