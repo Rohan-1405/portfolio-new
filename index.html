@@ -47,7 +47,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 <div class="nav-item" onclick="showPage('testimonial', this)">
 <i class="fa-solid fa-thumbs-up"></i>
-<span class="tooltip">Testmonial</span>
+<span class="tooltip">Testimonial</span>
 </div>
 
 <div class="nav-item" onclick="showPage('blog', this)">
@@ -91,7 +91,7 @@ Rohan <br>
 <section id="about" class="page">
 <div class="about-wrapper">
 <div class="about-left">
-<p class="about-title">• About Me —</p>
+<p class="section-label">• About Me —</p>
 <h2 class="about-heading">
 I'm <span>Rohan Potla</span>
 </h2>
@@ -167,54 +167,58 @@ DOWNLOAD CV
 
 <!-- experience -->
 <section id="experience" class="page">
+
 <div class="experience-wrapper">
-<p class="exp-label">• Experience —</p>
-<h2 class="exp-title">
-Job And Educational Experiences
-</h2>
 
-<div class="experience-grid">
-<!-- Education -->
+<p class="section-label">• Experience —</p>
+<h2 class="section-title">Job And Educational Experiences</h2>
+
+<div class="experience-container">
+
+<!-- LEFT SIDE (Education) -->
 <div class="exp-column">
-<h3 class="exp-heading">
-<i class="fa-solid fa-graduation-cap"></i> Education
-</h3>
 
-<div class="exp-card">
+<div class="exp-header">
+<i class="fa-solid fa-graduation-cap"></i>
+<h3>Education</h3>
+</div>
+
+<div class="timeline">
+
+<div class="exp-item">
 <h4>Bachelor of Technology</h4>
-<p class="exp-date">
-Oct 2021 - Apr 2017
-</p>
-<p>
-There are many variations of passages of Lorem Ipsum available.
-</p>
+<span>Oct, 2021 – Apr, 2025</span>
+<p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
 </div>
 
-<div class="exp-card">
-<h4>State Board of Intermediate Education </h4>
-<p class="exp-date">
-Jun 2019 - Mar 2021
-</p>
-<p>
-Lorem Ipsum is simply dummy text of the printing industry.
-</p>
-</div>
+<div class="dot"></div>
+
+<div class="exp-item">
+<h4>State Board of Intermediate Education</h4>
+<span>Jun, 2019 – Mar, 2021</span>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 </div>
 
-<!-- Job -->
+</div>
+
+</div>
+
+
+<!-- RIGHT SIDE (Job) -->
 <div class="exp-column">
-<h3 class="exp-heading">
-<i class="fa-solid fa-briefcase"></i> Job
-</h3>
 
-<div class="exp-card">
+<div class="exp-header">
+<i class="fa-solid fa-briefcase"></i>
+<h3>Job</h3>
+</div>
+
+<div class="timeline">
+
+<div class="exp-item">
 <h4>Fusion5 Technologies</h4>
-<p class="exp-date">
-Mar 2022 - Present
-</p>
-<p>
-Contrary to popular belief, Lorem Ipsum is not simply random text.
-</p>
+<span>Mar 2022 – Present</span>
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots</p>
+</div>
 </div>
 </div>
 </div>
@@ -224,7 +228,7 @@ Contrary to popular belief, Lorem Ipsum is not simply random text.
 <!-- projects -->
 <section id="projects" class="page">
 <div class="projects-wrapper">
-<p class="project-label">• Projects —</p>
+<p class="section-label">• Projects —</p>
 <h2 class="project-title">Awesome Projects</h2>
 
 <div class="project-filters">
@@ -258,7 +262,7 @@ Contrary to popular belief, Lorem Ipsum is not simply random text.
 <!-- testmonial -->
 <section id="testimonial" class="page">
 <div class="testimonial-wrapper">
-<p class="test-label">• Testimonial —</p>
+<p class="section-label">• Testimonial —</p>
 <h2 class="test-title">Client's Feedbacks</h2>
 <div class="testimonial-grid">
 <div class="testimonial-card">
@@ -319,7 +323,7 @@ When an unknown printer took a galley of type and scrambled it.
 <!-- blog -->
  <section id="blog" class="page">
 <div class="blog-wrapper">
-<p class="blog-label">• Blog Post —</p>
+<p class="section-label">• Blog Post —</p>
 <h2 class="blog-title">Read Latest Updates</h2>
 
 <div class="blog-grid">
@@ -383,7 +387,7 @@ When an unknown printer took a galley of type and scrambled it.
 <!-- contact me -->
 <section id="contact" class="page">
 <div class="contact-wrapper">
-<p class="contact-label">• Contact Me —</p>
+<p class="section-label">• Contact Me —</p>
 <h2 class="contact-title">Get In Touch With Me</h2>
 <form class="contact-form">
 <div class="contact-row">
