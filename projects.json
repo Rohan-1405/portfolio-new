@@ -2,19 +2,16 @@
   {
     "title": "Portfolio Website",
     "image": "project1.jpg",
-    "category": "web",
-    "link": "https://rohan-1405.github.io/FUTURE_FS_01/"
+    "category": "web"
   },
   {
     "title": "Pc Peripherals",
     "image": "project2.jpg",
-    "category": "web",
-    "link": "https://rohan-1405.github.io/FUTURE_FS_02/"
+    "category": "web"
   },
   {
     "title": "E-commerce ",
     "image": "project3.jpg",
-    "category": "design",
-    "link": "https://github.com/yourrepo"
+    "category": "design"
   }
 ]
