@@ -2,16 +2,19 @@
   {
     "title": "Portfolio Website",
     "image": "project1.jpg",
-    "category": "web"
+    "category": "web",
+    "link": "https://rohan-1405.github.io/FUTURE_FS_01/"
   },
   {
-    "title": "Ecommerce UI",
+    "title": "Pc Peripherals",
     "image": "project2.jpg",
-    "category": "web"
+    "category": "web",
+    "link": "https://rohan-1405.github.io/FUTURE_FS_02/"
   },
   {
-    "title": "Logo Design",
+    "title": "E-commerce ",
     "image": "project3.jpg",
-    "category": "design"
+    "category": "design",
+    "link": "https://github.com/yourrepo"
   }
 ]

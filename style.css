@@ -757,3 +757,139 @@ font-size:32px;
 padding:40px;
 }
 }
+
+#searchInput{
+padding:10px 15px;
+margin-bottom:20px;
+width:250px;
+border:1px solid #ddd;
+border-radius:6px;
+}
+
+*{
+transition: all 0.3s ease;
+}
+
+/* DARK MODE */
+
+.dark{
+background:#111;
+color:white;
+}
+
+/* sidebar */
+.dark .sidebar{
+background:#1a1a1a;
+}
+
+/* cards */
+.dark .service-card,
+.dark .project-card,
+.dark .testimonial-card,
+.dark .blog-card{
+background:#222;
+color:white;
+}
+
+/* inputs */
+.dark input,
+.dark textarea{
+background:#222;
+color:white;
+}
+
+/* buttons */
+.dark .send-btn{
+background:#333;
+color:white;
+}
+
+/* headings */
+.dark h1,
+.dark h2,
+.dark h3{
+color:white;
+}
+
+.menu-btn{
+position:fixed;
+top:20px;
+left:20px;
+font-size:22px;
+background:#fff;
+padding:10px;
+border-radius:8px;
+cursor:pointer;
+z-index:1000;
+display:none;
+}
+
+.menu-btn{
+position:fixed;
+top:20px;
+left:20px;
+z-index:1000;
+}
+
+/* VISITOR COUNTER STYLE */
+#visitCount{
+position:absolute;
+top:2%;
+left:2%;
+background:rgba(255,255,255,0.9);
+padding:8px 16px;
+border-radius:20px;
+font-size:14px;
+font-weight:500;
+color:#555;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+backdrop-filter:blur(6px);
+}
+
+/* EDIT BUTTON POSITION */
+#aboutText{
+display:block;
+margin-bottom:15px;
+}
+
+#aboutInput{
+margin-bottom:15px;
+width:100%;
+height:100px;
+padding:10px;
+}
+
+/* move button up */
+.about-left button{
+display:inline-block;
+margin-bottom:20px;
+}
+
+/* space before search bar */
+#projectSearch{
+display:block;
+margin-top:20px;
+margin-bottom:20px;
+padding:10px;
+width:300px;
+border-radius:6px;
+border:none;
+background:#f2f2f2;
+}
+
+@media(max-width:768px){
+.sidebar{
+transform:translateX(-100%);
+transition:0.3s;
+z-index:999;
+}
+.sidebar.active{
+transform:translateX(0);
+}
+.menu-btn{
+display:block;
+}
+.page{
+margin-left:0;
+}
+}

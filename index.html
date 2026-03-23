@@ -12,6 +12,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 </head>
 <body>
 
+<div class="menu-btn">
+<i class="fa-solid fa-bars"></i>
+</div>
+
 <div id="loader">
   <div class="loader-logo">R</div>
 </div>
@@ -59,6 +63,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <i class="fa-solid fa-comments"></i>
 <span class="tooltip">Contact</span>
 </div>
+
+<div class="nav-item" onclick="toggleDark()">
+<i class="fa-solid fa-moon"></i>
+<span class="tooltip">Dark Mode</span>
+</div>
+
 </div>
 
 <div class="language-dropdown">
@@ -85,6 +95,7 @@ Rohan <br>
 <div class="hero-image">
 <img src="profile.png">
 </div>
+<p id="visitCount">Visitors: 0</p>
 </section>
 
 <!-- ABOUT PAGE -->
@@ -95,11 +106,15 @@ Rohan <br>
 <h2 class="about-heading">
 I'm <span>Rohan Potla</span>
 </h2>
-<p class="about-text">
+<p class="about-text" id="aboutText">
 Aspiring Computer Science Engineering student at Anurag University, Hyderabad, with strong
 technical skills and problem-solving abilities. Eager to apply academic knowledge to real-world
 projects and grow in the field of computer science.
 </p>
+
+<textarea id="aboutInput" style="display:none;"></textarea>
+<button onclick="editAbout()">Edit</button>
+<button onclick="saveAbout()" style="display:none;" id="saveBtn">Save</button>
 
 <div class="about-stats">
 <div class="stat">
@@ -117,9 +132,10 @@ projects and grow in the field of computer science.
 <p>Projects Completed</p>
 </div>
 </div>
-<a href="rohan resume.pdf" download class="download-btn">
+<a href="rohan resume.pdf" download class="download-btn" onclick="trackDownload()">
 DOWNLOAD CV
 </a>
+<p id="downloadCount">Downloads: 0</p>
 </div>
 
 <div class="about-right">
@@ -156,7 +172,7 @@ DOWNLOAD CV
 <div class="card-inner">
 <!-- FRONT -->
 <div class="card-front">
-<img src="service1.jpeg">
+<img src="service2.jpeg">
 </div>
 <!-- BACK -->
 <div class="card-back">
@@ -172,7 +188,7 @@ DOWNLOAD CV
 <div class="card-inner">
 <!-- FRONT -->
 <div class="card-front">
-<img src="service1.jpeg">
+<img src="service3.jpeg">
 </div>
 <!-- BACK -->
 <div class="card-back">
@@ -250,34 +266,21 @@ DOWNLOAD CV
 <p class="section-label">• Projects —</p>
 <h2 class="project-title">Awesome Projects</h2>
 
+<input type="text" id="searchInput" placeholder="Search projects...">
+
 <div class="project-filters">
-<button>All</button>
-<button>Web Development</button>
-<button>Graphic Design</button>
-<button>MISC</button>
+<button onclick="filterProjects('all')">All</button>
+<button onclick="filterProjects('web')">Web</button>
+<button onclick="filterProjects('design')">Design</button>
+</div>
+
+<div class="admin-panel">
+<input type="text" id="pTitle" placeholder="Project Title">
+<input type="text" id="pImage" placeholder="Image path">
+<button onclick="addProject()">Add Project</button>
 </div>
 
 <div class="projects-grid" id="projectsContainer"></div>
-<!-- <div class="projects-grid">
-
-<div class="projects-grid" id="projectsContainer"></div>
-
-<div class="project-card">
-<img src="project1.jpg">
-</div>
-
-<div class="project-card">
-<img src="project2.jpg">
-</div>
-
-<div class="project-card">
-<img src="project3.jpg">
-</div>
-
-<div class="project-card">
-<img src="project1.jpg">
-</div>
-</div> -->
 </div>
 </section>
 
