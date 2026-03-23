@@ -6,6 +6,14 @@ loader.style.display = "none";
 });
 
 function showPage(page, element){
+document.getElementById(page).classList.add("active");
+if(page === "about"){
+startCounters();
+}
+document.getElementById(page).classList.add("active");
+if(page === "projects"){
+loadProjects();
+}
 let loader = document.getElementById("loader");
 /* show loader */
 loader.style.display = "flex";
@@ -29,57 +37,48 @@ loader.style.display = "none";
 },600);
 }
 
-const words = [
-"Web Developer",
-"Backend Developer"
-];
-
-let i = 0;
-let j = 0;
-let current = "";
-let deleting = false;
-
-function type(){
-
-current = words[i];
-
-if(deleting){
-j--;
+function startCounters(){
+document.querySelectorAll(".counter").forEach(counter => {
+let target = +counter.getAttribute("data-target");
+let updateCount = () => {
+let count = +counter.innerText;
+let speed = target / 50;
+if(count < target){
+counter.innerText = Math.ceil(count + speed);
+setTimeout(updateCount, 20);
 }else{
-j++;
+counter.innerText = target+"+";
+}
+};
+updateCount();
+});
 }
 
-let typing = document.getElementById("typing");
-
-if(typing){
-typing.textContent = current.substring(0,j);
+function loadProjects(){
+fetch("projects.json")
+.then(res => res.json())
+.then(data => {
+let container = document.getElementById("projectsContainer");
+container.innerHTML = "";
+data.forEach(project => {
+container.innerHTML += `
+<div class="project-card">
+  <img src="${project.image}" alt="">
+  <p>${project.title}</p>
+</div>
+`;
+});
+});
 }
 
-/* word completed */
-
-if(!deleting && j === current.length){
-
-deleting = true;
-setTimeout(type,1000);
-return;
-
+const roles = ["Backend Developer", "Web Developer"];
+let i = 0, j = 0;
+function type() {
+  document.getElementById("typing").innerText = roles[i].substring(0, j++);
+  if (j > roles[i].length) {
+    j = 0;
+    i = (i + 1) % roles.length;
+  }
+  setTimeout(type, 160);
 }
-
-/* word deleted */
-
-if(deleting && j === 0){
-
-deleting = false;
-i++;
-
-if(i === words.length){
-i = 0;
-}
-
-}
-
-setTimeout(type,120);
-
-}
-
 type();

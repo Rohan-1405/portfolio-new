@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Portfolio Website",
+    "image": "project1.jpg",
+    "category": "web"
+  },
+  {
+    "title": "Ecommerce UI",
+    "image": "project2.jpg",
+    "category": "web"
+  },
+  {
+    "title": "Logo Design",
+    "image": "project3.jpg",
+    "category": "design"
+  }
+]

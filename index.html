@@ -103,17 +103,17 @@ projects and grow in the field of computer science.
 
 <div class="about-stats">
 <div class="stat">
-<h3>0</h3>
+<h3 class="counter" data-target="0">0</h3>
 <p>Years of Experience</p>
 </div>
 
 <div class="stat">
-<h3>0</h3>
+<h3 class="counter" data-target="0">0</h3>
 <p>Satisfied Customers</p>
 </div>
 
 <div class="stat">
-<h3>4+</h3>
+<h3 class="counter" data-target="4">0</h3>
 <p>Projects Completed</p>
 </div>
 </div>
@@ -137,29 +137,48 @@ DOWNLOAD CV
 
 <!-- CARD 1 -->
 <div class="service-card">
-  <img src="service1.jpeg" alt="">
-  <div class="service-overlay">
-    <h3>Ecommerce Website</h3>
-    <p>Read More</p>
-  </div>
+<div class="card-inner">
+<!-- FRONT -->
+<div class="card-front">
+<img src="service1.jpeg">
+</div>
+<!-- BACK -->
+<div class="card-back">
+<i class="fa-solid fa-cart-shopping"></i>
+<h3>Ecommerce Website</h3>
+<p>Build modern online stores</p>
+</div>
+</div>
 </div>
 
 <!-- CARD 2 -->
 <div class="service-card">
-  <img src="service2.jpeg" alt="">
-  <div class="service-overlay">
-    <h3>Logo Design</h3>
-    <p>Read More</p>
-  </div>
+<div class="card-inner">
+<!-- FRONT -->
+<div class="card-front">
+<img src="service1.jpeg">
+</div>
+<!-- BACK -->
+<div class="card-back">
+<i class="fa-solid fa-pen-nib"></i>
+<h3>Logo Design</h3>
+<p>Build modern online stores</p>
+</div>
+</div>
 </div>
 
 <!-- CARD 3 (ACTIVE) -->
-<div class="service-card active">
-  <img src="service3.jpeg" alt="">
-  <div class="service-overlay">
-    <h3>HTML Templates</h3>
-    <p>Read More</p>
-  </div>
+<div class="service-card">
+<div class="card-inner">
+<!-- FRONT -->
+<div class="card-front">
+<img src="service1.jpeg">
+</div>
+<!-- BACK -->
+<div class="card-back">
+<i class="fa-solid fa-code"></i>
+<h3>Html Templates</h3>
+<p>Build modern online stores</p>
 </div>
 </div>
 </div>
@@ -238,7 +257,10 @@ DOWNLOAD CV
 <button>MISC</button>
 </div>
 
-<div class="projects-grid">
+<div class="projects-grid" id="projectsContainer"></div>
+<!-- <div class="projects-grid">
+
+<div class="projects-grid" id="projectsContainer"></div>
 
 <div class="project-card">
 <img src="project1.jpg">
@@ -255,7 +277,7 @@ DOWNLOAD CV
 <div class="project-card">
 <img src="project1.jpg">
 </div>
-</div>
+</div> -->
 </div>
 </section>
 
