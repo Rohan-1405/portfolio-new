@@ -67,34 +67,34 @@ updateCount();
 });
 }
 
-let allProjects = [];
-function loadProjects(){
-fetch("projects.json")
-.then(res => res.json())
-.then(data => {
-allProjects = data;
-displayProjects(data);
-});
-}
+// let allProjects = [];
+// function loadProjects(){
+// fetch("projects.json")
+// .then(res => res.json())
+// .then(data => {
+// allProjects = data;
+// displayProjects(data);
+// });
+// }
 
-function filterProjects(category){
-if(category === "all"){
-displayProjects(allProjects);
-}else{
-let filtered = allProjects.filter(p => p.category === category);
-displayProjects(filtered);
-}
-}
+// function filterProjects(category){
+// if(category === "all"){
+// displayProjects(allProjects);
+// }else{
+// let filtered = allProjects.filter(p => p.category === category);
+// displayProjects(filtered);
+// }
+// }
 
-document.addEventListener("input", function(e){
-if(e.target.id === "searchInput"){
-let value = e.target.value.toLowerCase();
-let filtered = allProjects.filter(p =>
-p.title.toLowerCase().includes(value)
-);
-displayProjects(filtered);
-}
-});
+// document.addEventListener("input", function(e){
+// if(e.target.id === "searchInput"){
+// let value = e.target.value.toLowerCase();
+// let filtered = allProjects.filter(p =>
+// p.title.toLowerCase().includes(value)
+// );
+// displayProjects(filtered);
+// }
+// });
 
 function loadProjects(){
 fetch("projects.json")
